@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="261dp"
+        android:onClick="onClick1"
+        android:text="report unsafe area"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <Button
+        android:id="@+id/showAreas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="373dp"
+        android:onClick="onClick2"
+        android:text="show unsafe areas"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <Button
+        android:id="@+id/stopAlerts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:onClick="onClick3"
+        android:text="COVID-19"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <Button
+        android:id="@+id/volunteer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:onClick="onClick4"
+        android:text="Show nearby areas"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="296dp" />
+</RelativeLayout>

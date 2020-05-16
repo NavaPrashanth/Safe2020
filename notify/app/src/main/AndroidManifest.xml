@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notify">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CovidMap"
+            android:label="@string/title_activity_covid_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MarkerActivity" />
+        <activity android:name=".Phone_num" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".showUnsafeMap" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".MapsReporter" />
+        <activity
+            android:name=".ReportUnsafeArea"
+            android:label="@string/title_activity_report_unsafe_area"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".backgroundNotifier"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="Details of notification"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

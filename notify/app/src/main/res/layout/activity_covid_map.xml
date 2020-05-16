@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidMap">
+    To get the desired color choose a value between 0 and 360. 0 is red, 90 is cyan, 270 is purple
+    <include layout="@layout/content_covid_map" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

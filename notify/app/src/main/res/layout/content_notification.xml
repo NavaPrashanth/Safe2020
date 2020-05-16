@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NotificationActivity"
+    tools:showIn="@layout/activity_notification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/id1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#ff0000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_marginTop="20dp"
+
+            android:textSize="20dp"
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:text="reason"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="160dp"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:textSize="15dp"
+            android:text="Unsafe for age groups between"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/age"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="240dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:textSize="15dp"
+            android:text="Unsage for gender"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="320dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:textSize="15dp"
+            android:text="Unsafe in timming"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/timming"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="400dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:textSize="15dp"
+            android:text="Unsafe for a radius of"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/radius"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
